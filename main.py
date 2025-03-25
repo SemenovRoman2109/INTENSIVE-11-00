@@ -1,5 +1,11 @@
 '''
     Головний модуль запуску Dicord бота
 '''
-import modules
-# .gitignore - вказує файли якi не потрiбно зберiгати на GIT
+
+from modules import bot_client, TOKEN
+
+def main():
+    bot_client.run(TOKEN)
+
+if __name__ == '__main__':
+    main()
