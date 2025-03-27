@@ -17,7 +17,7 @@ client_openai = openai.AsyncOpenAI(api_key = OPENAI_SECRET_KEY)
 async def get_response_from_ai(question: str):
     # 
     response = await client_openai.chat.completions.create(
-        model = "ft:gpt-4o-mini-2024-07-18:worldit::BFe3bYy1", #
+        model = "ft:gpt-4o-mini-2024-07-18:worldit::BFf7bJwz", #
         messages = [{
             "role": "user", #
             "content": question, #
